@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :purchases
   resources :type_documents
   resources :communes
   resources :regions
