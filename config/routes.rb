@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
+  root to: "home#index"
   resources :sales
   resources :inventories
   resources :customers
