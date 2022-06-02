@@ -1,5 +1,13 @@
 # README
 
+
+#=======================================================================================
+Este Archivo se encuentra en construcción se crearon las tablas, pero aún no están conectadas. 
+
+#=========================================================================================
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
