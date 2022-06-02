@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sales
+  resources :inventories
   resources :customers
   resources :purchases
   resources :type_documents

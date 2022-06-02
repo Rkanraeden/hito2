@@ -1,0 +1,102 @@
+<%= form_with(model: sale) do |form| %>
+  <% if sale.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sale.errors.count, "error") %> prohibited this sale from being saved:</h2>
+
+      <ul>
+        <% sale.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.datetime_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :type_doc, style: "display: block" %>
+    <%= form.text_field :type_doc %>
+  </div>
+
+  <div>
+    <%= form.label :num_doc, style: "display: block" %>
+    <%= form.text_field :num_doc %>
+  </div>
+
+  <div>
+    <%= form.label :vendor, style: "display: block" %>
+    <%= form.text_field :vendor %>
+  </div>
+
+  <div>
+    <%= form.label :name_client, style: "display: block" %>
+    <%= form.text_field :name_client %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :commune, style: "display: block" %>
+    <%= form.text_field :commune %>
+  </div>
+
+  <div>
+    <%= form.label :region, style: "display: block" %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div>
+    <%= form.label :prod_id, style: "display: block" %>
+    <%= form.text_field :prod_id %>
+  </div>
+
+  <div>
+    <%= form.label :prod_desc, style: "display: block" %>
+    <%= form.text_field :prod_desc %>
+  </div>
+
+  <div>
+    <%= form.label :units, style: "display: block" %>
+    <%= form.number_field :units %>
+  </div>
+
+  <div>
+    <%= form.label :cost_price, style: "display: block" %>
+    <%= form.number_field :cost_price %>
+  </div>
+
+  <div>
+    <%= form.label :sale_price, style: "display: block" %>
+    <%= form.number_field :sale_price %>
+  </div>
+
+  <div>
+    <%= form.label :net_price, style: "display: block" %>
+    <%= form.number_field :net_price %>
+  </div>
+
+  <div>
+    <%= form.label :tax, style: "display: block" %>
+    <%= form.number_field :tax %>
+  </div>
+
+  <div>
+    <%= form.label :total, style: "display: block" %>
+    <%= form.number_field :total %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

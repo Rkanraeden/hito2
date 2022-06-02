@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_02_035445) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_02_044046) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -31,6 +31,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_02_035445) do
     t.string "commune"
     t.string "telphone"
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "inventories", force: :cascade do |t|
+    t.integer "Id_prod"
+    t.integer "code"
+    t.string "brand"
+    t.string "category"
+    t.string "description"
+    t.integer "cost_price"
+    t.integer "sale_price"
+    t.integer "stock"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -65,6 +78,28 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_02_035445) do
 
   create_table "regions", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sales", force: :cascade do |t|
+    t.datetime "date"
+    t.string "type_doc"
+    t.string "num_doc"
+    t.string "vendor"
+    t.string "name_client"
+    t.string "address"
+    t.string "commune"
+    t.string "region"
+    t.string "category"
+    t.string "prod_id"
+    t.string "prod_desc"
+    t.integer "units"
+    t.integer "cost_price"
+    t.integer "sale_price"
+    t.integer "net_price"
+    t.integer "tax"
+    t.integer "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
