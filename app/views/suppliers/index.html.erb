@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Suppliers</h1>
-
+<%= paginate @suppliers %>
 <div id="suppliers">
   <% @suppliers.each do |supplier| %>
     <%= render supplier %>
@@ -10,5 +10,5 @@
     </p>
   <% end %>
 </div>
-
+<%= paginate @suppliers %>
 <%= link_to "New supplier", new_supplier_path %>

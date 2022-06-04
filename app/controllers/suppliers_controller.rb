@@ -3,7 +3,8 @@ class SuppliersController < ApplicationController
 
   # GET /suppliers or /suppliers.json
   def index
-    @suppliers = Supplier.all
+    # @suppliers = Supplier.all
+    @suppliers = Supplier.order("rut").page(params[:page])
   end
 
   # GET /suppliers/1 or /suppliers/1.json

@@ -2,7 +2,8 @@
 
 
 #=======================================================================================
-Este Archivo se encuentra en construcción se crearon las tablas, pero aún no están conectadas. 
+Este archivo se actualizó de acuerdo a lo que faltaba, se cargó data en las tablas de productos
+y proveedores, y se paginó con Kaminari
 
 #=========================================================================================
 
