@@ -6,6 +6,9 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
 
+# install gem "devise"
+gem 'devise', '~> 4.2'
+
 # install gem kaminari
 gem 'kaminari'
 
