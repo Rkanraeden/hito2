@@ -1,12 +1,6 @@
 # README
 
-
-#=======================================================================================
-Este archivo se actualizó de acuerdo a lo que faltaba, se cargó data en las tablas de productos
-y proveedores, y se paginó con Kaminari
-
-#=========================================================================================
-
+Bienvenido al proyecto Hito 4 de Desafio Latam, App_sale Sistema de Ventas Prototipo 
 
 
 This README would normally document whatever steps are necessary to get the
@@ -14,20 +8,16 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 7.0
 
-* System dependencies
+* Gems installed: Devise, Kaminari.
 
 * Configuration
 
-* Database creation
+* Database creation: PostgreSql
 
-* Database initialization
+* Database initialization: PostgreSql
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Deployment instructions: Pendent
 
 * ...
