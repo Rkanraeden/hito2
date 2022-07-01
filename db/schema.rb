@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_01_185940) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_01_203441) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -28,6 +28,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_01_185940) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "communes_customers", id: false, force: :cascade do |t|
+    t.integer "customer_id", null: false
+    t.integer "commune_id", null: false
+    t.index ["commune_id", "customer_id"], name: "index_communes_customers_on_commune_id_and_customer_id"
+    t.index ["customer_id", "commune_id"], name: "index_communes_customers_on_customer_id_and_commune_id"
   end
 
   create_table "customers", force: :cascade do |t|
