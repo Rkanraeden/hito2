@@ -30,11 +30,22 @@
     <%= form.label :address, style: "display: block" %>
     <%= form.text_field :address %>
   </div>
-
+<%# 
   <div>
     <%= form.label :commune, style: "display: block" %>
-    <%= form.text_field :commune %>
+    <%#= form.text_field :commune %>
+  <%# </div> %>
+
+  <div class="field">
+    <%= form.label :commune_id, class:"label" %>
+    <div class="control">
+      <div class="select is-fullwidth">
+        <%= form.collection_select  :category_id, Commune.order(:name), :id, :name, required: true, prompt: t('.choose') %>
+      </div>
+    </div>
   </div>
+
+
 
   <div>
     <%= form.label :telphone, style: "display: block" %>
