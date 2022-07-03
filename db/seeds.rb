@@ -21,4 +21,3 @@ end
 15.times do |i|
     product = Product.create(Id_prod: "2", code: "056025", brand: "Soprole", category: "Lacteos", description: "peñaflor", cost_price: "230", stock: "25", sale_price:"500")
 end
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
